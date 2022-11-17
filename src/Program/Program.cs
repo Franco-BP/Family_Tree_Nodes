@@ -23,6 +23,10 @@ namespace Program
             OlderChildVisitor olderChildVisitor = new OlderChildVisitor();
             olderChildVisitor.Visit(marcelo);
             Console.WriteLine(olderChildVisitor.older.Name);
+
+            LargestNameVisitor largestNameVisitor = new LargestNameVisitor();
+            largestNameVisitor.Visit(marcelo);
+            Console.WriteLine(largestNameVisitor.largest.Name);
         }
     }
 }
